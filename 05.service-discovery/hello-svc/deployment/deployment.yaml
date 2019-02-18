@@ -1,0 +1,38 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: hello-svc
+  labels:
+    app: hello-svc
+    workshop: phpuk19
+spec:
+  revisionHistoryLimit: 3
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: hello-svc
+  template:
+    metadata:
+      labels:
+        app: hello-svc
+        workshop: phpuk19
+    spec:
+      containers:
+        - name: hello-svc
+          image: bashofmann/k8s-workshop-hello-svc:1.0.0
+          ports:
+            - containerPort: 3001
+              name: http
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            timeoutSeconds: 1

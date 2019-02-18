@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: web-application
+  labels:
+    app: web-application
+    workshop: phpuk19
+spec:
+  type: LoadBalancer
+  ports:
+    -
+      name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
+  selector:
+    app: web-application

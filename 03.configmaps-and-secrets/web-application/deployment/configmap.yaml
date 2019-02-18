@@ -1,0 +1,9 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: web-application-config
+  labels:
+    app: web-application
+    workshop: phpuk19
+data:
+  COMPANY_NAME: Acme Inc.
