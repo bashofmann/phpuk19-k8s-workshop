@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: quote-svc
-          image: bashofmann/k8s-workshop-quote-svc:5.0.0
+          image: bashofmann/k8s-workshop-quote-svc:8.0.0
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

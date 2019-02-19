@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: bashofmann/k8s-workshop-web-application
   tag: stable
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""

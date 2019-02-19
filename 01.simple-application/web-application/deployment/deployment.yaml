@@ -23,6 +23,7 @@ spec:
       containers:
         - name: web-application
           image: bashofmann/k8s-workshop-web-application:1.0.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
               name: http

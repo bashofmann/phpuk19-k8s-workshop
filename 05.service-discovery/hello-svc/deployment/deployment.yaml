@@ -6,6 +6,7 @@ metadata:
     app: hello-svc
     workshop: phpuk19
 spec:
+  replicas: 2
   revisionHistoryLimit: 3
   strategy:
     rollingUpdate:
@@ -22,7 +23,8 @@ spec:
     spec:
       containers:
         - name: hello-svc
-          image: bashofmann/k8s-workshop-hello-svc:1.0.0
+          image: bashofmann/k8s-workshop-hello-svc:5.0.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 3001
               name: http

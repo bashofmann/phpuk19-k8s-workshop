@@ -28,6 +28,12 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: ROOT_PASSWORD
+                  name: mysql-cluster-secret
           envFrom:
             - configMapRef:
                 name: {{ include "web-application.fullname" . }}-config

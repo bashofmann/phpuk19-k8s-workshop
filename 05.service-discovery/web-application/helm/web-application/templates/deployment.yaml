@@ -51,9 +51,9 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       volumes:
-        - name: {{ include "web-application.fullname" . }}-secret
+        - name: web-application-secret
           secret:
-            secretName: web-application-secret
+            secretName: {{ include "web-application.fullname" . }}-secret
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
