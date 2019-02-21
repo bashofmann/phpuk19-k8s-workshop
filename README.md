@@ -2,6 +2,12 @@
 
 ## 0. Preparing your cluster
 
+You need locally
+* kubectl https://kubernetes.io/docs/tasks/tools/install-kubectl/
+* helm https://docs.helm.sh/using_helm/#installing-helm
+* (docker) https://docs.docker.com/install/
+* linkerd cli: https://linkerd.io/2/getting-started/#step-1-install-the-cli
+
 * Make configs individual
 ```
 ./apply-your-name.sh
