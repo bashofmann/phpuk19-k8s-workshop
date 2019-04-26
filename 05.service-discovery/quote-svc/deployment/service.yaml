@@ -4,7 +4,7 @@ metadata:
   name: quote-svc
   labels:
     app: quote-svc
-    workshop: phpuk19
+    workshop: workshop
 spec:
   type: ClusterIP
   ports:

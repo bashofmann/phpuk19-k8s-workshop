@@ -4,7 +4,7 @@ metadata:
   name: hello-svc
   labels:
     app: hello-svc
-    workshop: phpuk19
+    workshop: workshop
 spec:
   type: ClusterIP
   ports:

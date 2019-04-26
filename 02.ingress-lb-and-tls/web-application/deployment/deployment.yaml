@@ -4,7 +4,7 @@ metadata:
   name: web-application
   labels:
     app: web-application
-    workshop: phpuk19
+    workshop: workshop
 spec:
   revisionHistoryLimit: 3
   strategy:
@@ -18,7 +18,7 @@ spec:
     metadata:
       labels:
         app: web-application
-        workshop: phpuk19
+        workshop: workshop
     spec:
       containers:
         - name: web-application

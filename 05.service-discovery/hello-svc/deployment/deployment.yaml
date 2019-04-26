@@ -4,7 +4,7 @@ metadata:
   name: hello-svc
   labels:
     app: hello-svc
-    workshop: phpuk19
+    workshop: workshop
 spec:
   replicas: 2
   revisionHistoryLimit: 3
@@ -19,7 +19,7 @@ spec:
     metadata:
       labels:
         app: hello-svc
-        workshop: phpuk19
+        workshop: workshop
     spec:
       containers:
         - name: hello-svc

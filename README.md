@@ -142,7 +142,7 @@ linkerd version
 kubectl get deployments -o yaml | linkerd inject - | kubectl apply -f -
 ```
 
-* Go to https://linkerd-dashboard.phpuk19.plgrnd.be/ and see the metrics
+* Go to https://linkerd-dashboard.workshop.plgrnd.be/ and see the metrics
 
 ## 08. Monitoring
 

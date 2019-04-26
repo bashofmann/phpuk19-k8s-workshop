@@ -7,7 +7,7 @@ metadata:
     helm.sh/chart: {{ include "web-application.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
-    workshop: phpuk19
+    workshop: workshop
 spec:
   type: {{ .Values.service.type }}
   ports:

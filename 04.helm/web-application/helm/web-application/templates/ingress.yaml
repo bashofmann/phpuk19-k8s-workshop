@@ -10,7 +10,7 @@ metadata:
     helm.sh/chart: {{ include "web-application.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
-    workshop: phpuk19
+    workshop: workshop
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}

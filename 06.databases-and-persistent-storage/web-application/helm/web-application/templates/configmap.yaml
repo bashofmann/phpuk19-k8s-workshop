@@ -6,7 +6,7 @@ metadata:
     helm.sh/chart: {{ include "web-application.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
-    workshop: phpuk19
+    workshop: workshop
 data:
   COMPANY_NAME: "{{ .Values.company }}"
   DB_HOST: mysql-cluster-mysql-master

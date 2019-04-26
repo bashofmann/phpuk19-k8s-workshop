@@ -4,6 +4,6 @@ metadata:
   name: web-application-config
   labels:
     app: web-application
-    workshop: phpuk19
+    workshop: workshop
 data:
   COMPANY_NAME: Acme Inc.

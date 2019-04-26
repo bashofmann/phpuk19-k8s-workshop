@@ -4,13 +4,13 @@ metadata:
   name: web-application
   labels:
     app: web-application
-    workshop: phpuk19
+    workshop: workshop
 spec:
   tls:
     - hosts:
-        - web-application-<YOURNAME>.phpuk19.plgrnd.be
+        - web-application-<YOURNAME>.workshop.plgrnd.be
   rules:
-    - host: web-application-<YOURNAME>.phpuk19.plgrnd.be
+    - host: web-application-<YOURNAME>.workshop.plgrnd.be
       http:
         paths:
           - path: /

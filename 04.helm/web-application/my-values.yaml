@@ -8,10 +8,10 @@ ingress:
   paths:
     - /
   hosts:
-    - web-application-helm-<YOURNAME>.phpuk19.plgrnd.be
+    - web-application-helm-<YOURNAME>.workshop.plgrnd.be
   tls:
     - hosts:
-        - web-application-<YOURNAME>.phpuk19.plgrnd.be
+        - web-application-<YOURNAME>.workshop.plgrnd.be
 
 resources:
   requests:
